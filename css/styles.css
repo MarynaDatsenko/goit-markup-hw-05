@@ -518,7 +518,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: grid;
     align-items: center;
     justify-content: center;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -563,7 +563,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
 }
 
-.modal-btn:hover,
+.modal-btn:hover{
+    background-color: #404bbf;
+    border: none;
+}
 .modal-btn:focus {
     background-color: #404bbf;
     border: none;
@@ -573,10 +576,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover,
+.modal-btn-icon:hover {
+    fill: #ffffff;
+}
 .modal-btn-icon:focus {
     fill: #ffffff;
 }
+
 .modal-title {
     font-weight: 500;
     text-align: center;
@@ -587,11 +593,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .modal-field {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-input {
@@ -639,6 +644,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
+.comment {
+    margin-bottom: 16px;
+}
+
 .modal-label {
     display: block;
     color: #8e8f99;
@@ -655,6 +664,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-field-comment {
+    margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -682,7 +695,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    display: flex;
     align-items: center;
 }
 
